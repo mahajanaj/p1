@@ -1,18 +1,12 @@
 #include<stdio.h>
+int rev( long int n)
+{
+    if(n==0)
+       return 0;
+    else
+      return 1+rev(n/10);
+}
 int main()
 {
-   int num,rem,reverse_num=0;
-   //Input number
-   printf("\nEnter any number:");
-   scanf("%d",&num);
-
-   while(num>=1)
-   {
-      rem = num % 10;
-      reverse_num = reverse_num * 10 + rem;
-      num = num / 10;
-   }
-
-   printf("\nReverse of input number is: %d", reverse_num);
-   return 0;
+    printf("%d",rev(3212184615484));
 }
