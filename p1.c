@@ -6,7 +6,7 @@ int main()
    int i;
 
    for(i = 0; i< 10; i++)
-      printf("%d ", array[i]);
+      printf("%d\n", array[i]);
 
    return 0;
 }
