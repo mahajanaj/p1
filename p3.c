@@ -1,12 +1,17 @@
 #include<stdio.h>
 int rev( long int n)
 {
-    if(n==0)
-       return 0;
+    if(n<=9)
+
+       return 1;
+
+
     else
+
       return 1+rev(n/10);
+
 }
 int main()
 {
-    printf("%d",rev(3212184615484));
+    printf("%d",rev(0));
 }
